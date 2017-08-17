@@ -1,4 +1,4 @@
-
+using System;
 public class ReversePolishCalc {
 
     // You'll need a variable here to keep track of the top of the stack
@@ -9,7 +9,7 @@ public class ReversePolishCalc {
     // The stack
     private String[] stack;
 
-    public double calculate(String input) {
+    public double Calculate(String input) {
 
         // 1. Use the String split method to split the string into tokens at the commas
         tokens = ...
@@ -18,7 +18,7 @@ public class ReversePolishCalc {
         stack = ...
 
         // 3. write the algorithm
-        for(int i = 0; i < tokens.length; ++i) {
+        for(int i = 0; i < tokens.Length; ++i) {
             // calls to push() and pop() and do the math here
         }
 
@@ -26,15 +26,15 @@ public class ReversePolishCalc {
         return pop();
     }
 
-    private void push(String number) {
+    private void Push(String number) {
         // push on the stack
     }
 
-    private void push(double d) {
+    private void Push(double d) {
         // change the double to a string and then push it on the stack
     }
 
-    private double pop() {
+    private double Pop() {
         // remove the string from the top of the stack and convert it to a double and return it
     }
 }
