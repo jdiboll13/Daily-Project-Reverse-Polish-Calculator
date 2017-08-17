@@ -10,7 +10,7 @@ public class ReversePolishCalc {
     private String[] tokens;
 
     // The stack
-    private String[] stack;
+    private Stack<string> stack = new Stack<string>();
 
     public double Calculate(String input) {
 
@@ -19,8 +19,8 @@ public class ReversePolishCalc {
         Console.WriteLine(tokens);
 
         // 2. Allocate a stack as big as the number of tokens
-        var myStack = new Stack<string>();
-        stack = new string[tokens.Length];
+        stack.Push();
+        stack.Pop();
 
         // 3. write the algorithm
         for(int i = 0; i < tokens.Length; ++i) 
@@ -31,18 +31,5 @@ public class ReversePolishCalc {
 
         // 4. return the result
         return pop();
-    }
-
-    private void Push(String number) {
-        // push on the stack
-        Stack.Push(number);
-    }
-
-    private void Push(double d) {
-        // change the double to a string and then push it on the stack
-    }
-
-    private double Pop() {
-        // remove the string from the top of the stack and convert it to a double and return it
     }
 }
