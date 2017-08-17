@@ -1,12 +1,12 @@
 #### Reverse Polish Calculator
 For this activity implement a Reverse Polish Notation (RPN) calculator.
 
-See the [Reverse Polish notation wikipedia page] (https://en.wikipedia.org/wiki/Reverse_Polish_notation) for a better understanding of RPN.
+See the [Reverse Polish notation wikipedia page](https://en.wikipedia.org/wiki/Reverse_Polish_notation) for a better understanding of RPN.
 
-See the [Example] (https://en.wikipedia.org/wiki/Reverse_Polish_notation#Example) to understand the algorithm. Also see [this videp](https://www.youtube.com/watch?v=7ha78yWRDlE) for a good explination of the RPN (warning: the camera work is very wobbly)
+See the [Example](https://en.wikipedia.org/wiki/Reverse_Polish_notation#Example) to understand the algorithm. Also see [this videp](https://www.youtube.com/watch?v=7ha78yWRDlE) for a good explination of the RPN (warning: the camera work is very wobbly)
 
 #### Getting Started
-Fork this repo to get started
+Fork this repo & clone this repo to get started
 
 ```
 https://github.com/mdewey/Daily-Project-Reverse-Polish-Calculator
