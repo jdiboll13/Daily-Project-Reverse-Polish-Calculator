@@ -30,10 +30,10 @@ namespace Daily_Project_Reverse_Polish_Calculator
             checkResult(rpnExpression, expectedResult, actualResult);
 
             // Uncomment this test which has many operators
-            //        rpnExpression = "5,1,2,+,4,*,+,3,-";
-            //        expectedResult = 14.0;
-            //        actualResult = rpn.calculate(rpnExpression);
-            //        checkResult(rpnExpression, expectedResult, actualResult);
+            rpnExpression = "5,1,2,+,4,*,+,3,-";
+            expectedResult = 14.0;
+            actualResult = rpc.Calculate(rpnExpression);
+            checkResult(rpnExpression, expectedResult, actualResult);
         }
 
         private static void checkResult(String expression, double expected, double actual)

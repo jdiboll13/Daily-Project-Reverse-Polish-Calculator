@@ -4,7 +4,6 @@ using System.Collections.Generic;
 public class ReversePolishCalc {
 
     // You'll need a variable here to keep track of the top of the stack
-    var topOfStack;
 
     // The array of the input string split up
     private String[] tokens;
@@ -18,18 +17,50 @@ public class ReversePolishCalc {
         tokens = input.Split(',');
         Console.WriteLine(tokens);
 
-        // 2. Allocate a stack as big as the number of tokens
-        stack.Push();
-        stack.Pop();
+        
 
         // 3. write the algorithm
         for(int i = 0; i < tokens.Length; ++i) 
         {
-            // calls to push() and pop() and do the math here
-
+            if (tokens[i] == "+")
+            {
+                var a = double.Parse(stack.Pop());
+                var b = double.Parse(stack.Pop());
+                var result = b + a;
+                var realResult = result.ToString();
+                stack.Push(realResult);
+            }
+            else if (tokens[i] == "-")
+            {
+                var a = double.Parse(stack.Pop());
+                var b = double.Parse(stack.Pop());
+                var result = b - a;
+                var realResult = result.ToString();
+                stack.Push(realResult);
+            }
+            else if (tokens[i] == "*")
+            {
+                var a = double.Parse(stack.Pop());
+                var b = double.Parse(stack.Pop());
+                var result = b * a;
+                var realResult = result.ToString();
+                stack.Push(realResult);
+            }
+            else if (tokens[i] == "/")
+            {
+                var a = double.Parse(stack.Pop());
+                var b = double.Parse(stack.Pop());
+                var result = b / a;
+                var realResult = result.ToString();
+                stack.Push(realResult);
+            }
+            else
+            {
+                stack.Push(tokens[i]);
+            }
         }
+        var finalResult = stack.Pop();
 
-        // 4. return the result
-        return pop();
+        return double.Parse(finalResult);
     }
 }
